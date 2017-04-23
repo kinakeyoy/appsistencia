@@ -1,5 +1,5 @@
 <?php
-$host="serverbdappsistencia.database.windows.net";
+$host="server = tcp:serverbdappsistencia.database.windows.net,1433";
 $usuario="userbdasistencia";
 $clave="Sismad2017";
 $base="BDAppsistencia";
