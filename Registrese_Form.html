@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->    
+  </head>
+  <body>
+  <br>
+  <div class="container-fluid">
+  <div class="jumbotron boxlogin">
+    
+<form method="post" name="form_register" action="validacion_registro.php" >
+<label for="inputEmail" >Rol:</label>
+              <select name="frol" class="form-control" title="Selecciona un rol" required > 
+                            <option value="1" selected >Alumno </option> 
+                            <option value="2" >Tutor</option>
+                            <option value="3">Administrativo</option>
+              </select>
+              <br>
+
+ <div class="form-group">
+  <label for="usr">Nombre Completo:</label>
+  <input type="text" name="fnombre" placeholder="Nombre" class="form-control" required>
+</div>
+<div class="form-group">
+  <label for="usr">Apellidos:</label>
+  <input type="text" name="fapellido" class="form-control" placeholder="Apellido" required>
+</div>
+<div class="form-group">
+  <label for="usr">Email:</label>
+  <input type="email" name="femail" class="form-control" placeholder="alumno@universidad.edu.co" required>
+</div>
+<div class="form-group">
+  <label for="usr">Telefono:</label>
+  <input type="number" name="ftelefono" class="form-control" placeholder="3000000000" required>
+</div>
+ <div class="form-group">
+  <label for="usr">Codigo:</label>
+  <input type="text" name="fcodigo" class="form-control" placeholder="4150510000" required>
+</div>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" name="fpass1" class="form-control" placeholder="********"required>
+</div>
+<div class="form-group">
+  <label for="pwd">Repite Password:</label>
+  <input type="password" name="fpass2" class="form-control" placeholder="********"required>
+</div>
+
+
+  <button type="submit" class="btn btn-info btn-lg" data-toggle="tooltip" title="Registrese!!">
+  <span class="glyphicon glyphicon-floppy-saved"> </span> Registrese
+  </button>
+
+
+</form>
+
+     
+  </body>
+</html>
