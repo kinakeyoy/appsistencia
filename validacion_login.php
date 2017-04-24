@@ -34,8 +34,8 @@ while ($num_registros>0){
 			}
 		if(($select==$id2)and($usuario==$usuario2)and($pass<>$pass2))
 			{
-				  	 header('Location: Alerta_Pass.html ');
-				     break;
+				echo "<script>Alert('Contraseña Erronea')</script>";  	 //header('Location: Alerta_Pass.html ');
+				break;
 			}
 			
 			$num_registros--;
