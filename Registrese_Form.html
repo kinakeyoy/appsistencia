@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title></title>
+    <title>Registro</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -15,30 +15,6 @@
     <![endif]-->    
   </head>
   <body>
-  <!-- Comprobacion contraseñas coinciden -->
-  <script>function comprobarClave(){
- var fpass1 ="";
- var fpass2 ="";
- 
- clave1 = document.getElementById("fpass1").value;
- clave2 = document.getElementById("fpass2").value;
- 
- if ((clave1.length>=6) && (clave2.length>=6)){
-   if (clave1 == clave2){
-     document.getElementById("guardar").disabled=false;
-     document.getElementById("Mensaje 1").hidden=true;
-   }
- else{
-     document.getElementById("Mensaje 2").hidden=false; 
-     document.getElementById("guardar").disabled=true;
-   }
- }
- else{
-   document.getElementById("guardar").disabled=true;
-   document.getElementById("Mensaje 3").hidden=false; 
- }
-    }
-   </script>
   <br>
   <div class="container-fluid">
   <div class="jumbotron boxlogin">
@@ -82,9 +58,8 @@
 </div>
 
 
-  <button id="guardar" type="submit" class="btn btn-info btn-lg" data-toggle="tooltip" title="Registrarse">
-  <span class="glyphicon glyphicon-floppy-saved"> </span> Registrese
-  </button>
+  <button type="submit" class="btn btn-info btn-lg" data-toggle="tooltip" title="Registrarse">
+  <span class="glyphicon glyphicon-floppy-saved"> </span> Registrese </button>
 
 
 </form>
