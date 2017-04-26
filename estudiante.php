@@ -23,9 +23,9 @@ if(!isset($_SESSION["session_username"])) {
       
   </head>
   <body>
-    <?php
-    session_start();    
-      ?>
+   //<?php
+   //session_start();    
+   // ?>
      
       
 <nav class="navbar navbar-inverse">
