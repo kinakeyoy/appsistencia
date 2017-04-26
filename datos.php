@@ -1,17 +1,17 @@
 <?php
-//$host="sqlsrv:server = tcp:serverbdappsistencia.database.windows.net,1433";
-//$usuario="userbdasistencia";
-//$clave="Sismad2017";
-//$Database="BDAppsistencia";
-//$conexion= mysqli_connect($host, $usuario, $clave, $base);
-try {
-    $conexion = new PDO("sqlsrv:server = tcp:serverbdappsistencia.database.windows.net,1433; Database = BDAppsistencia", "userbdasistencia", "Sismad2017");
-    $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
-    die(print_r($e));
-}
+$host="us-cdbr-azure-east-c.cloudapp.net";
+$usuario="b049e02b7dcb0d";
+$clave="303abca4";
+$Database="bdappsistencia";
+$conexion= mysqli_connect($host, $usuario, $clave, $base);
+ // Connect to database.
+ try {
+     $conexion = new PDO( "mysql:host=$host;dbname=$Database", $useario, $clave);
+     $conexion->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+ }
+ catch(Exception $e){
+     die(var_dump($e));
+ }
 
 ?>
 
