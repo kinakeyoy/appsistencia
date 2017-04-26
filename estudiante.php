@@ -1,12 +1,12 @@
 
-<?php
+<!DOCTYPE html>
+<html lang="en">
+	<?php
 session_start();
 if(!isset($_SESSION["session_username"])) {
  header("location:/Index.html");
 } else {
 ?>
-<!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
