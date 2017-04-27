@@ -6,10 +6,7 @@ $Database="bdappsistencia";
 $conexion= mysqli_connect($host, $usuario, $clave, $base);
 <<<<<<< HEAD
 
-//prueba de github desde sublime
-//prueba de github desde sublime
-//prueba de github desde sublime
-//prueba de github desde sublime
+
 
 ?>
 

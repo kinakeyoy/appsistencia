@@ -1,6 +1,8 @@
 <?php
+
+echo "dentro de archivo validacion";
 // incluimos lo datos de conexion y las funciones
-include("datos.php");
+/*include("datos.php");
 	$usuario=$_POST["fcodigo"];
 	$pass=$_POST["fpassword"];
 	$select=$_POST["fselect"];
@@ -97,5 +99,6 @@ else
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>Success!</strong> Indicates a successful or positive action.
 </div>
+*/
 */
 ?>
