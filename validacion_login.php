@@ -6,9 +6,9 @@ include("datos.php");
 	$usuario=$_POST["fcodigo"];
 	$pass=$_POST["fpassword"];
 	$select=$_POST["fselect"];
-	echo $_POST["fcodigo"];
-	echo $_POST["fpassword"];
-	echo $_POST["fselect"];
+	echo $usuario;
+	echo $pass;
+	echo $select;
 
 //usamos ese variables
 session_start();
