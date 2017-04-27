@@ -2,12 +2,12 @@
 //Inicio la sesión 
 session_start(); 
 
-<<<<<<< HEAD
+
 if (isset($_SESSION['user'])) 
 {
         echo "dentro del if"."  <br>";
             echo $_SESSION['user'];
-=======
+/*
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,18 +46,18 @@ if (isset($_SESSION['user']))
       <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
     </ul>
   </div>
-</nav>  
->>>>>>> 485e18469a5eedb6b35a880a5f6f551b58d7cbff
+</nav>  */
+
 
         }
     else
         echo "fuera del if";
   
-<<<<<<< HEAD
+
 ?>
-=======
+
   </body>
 </html>
 	
 	
->>>>>>> 485e18469a5eedb6b35a880a5f6f551b58d7cbff
+
