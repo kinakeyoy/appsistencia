@@ -15,16 +15,6 @@
     <![endif]-->    
   </head>
   <body>
-  <? php
-    session_start();
-
-    if(isset($_SESSION['user']))
-      {
-        $user=$_SESSION['user'];
-      }
-
-    ?>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -36,13 +26,11 @@
       <li><a href="#">Validar Asistencia</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $user; ?></a></li>
-      <li><a href="/logout.php"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $usuario; ?></a></li>
+      <li><a href="/Logout.php"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
     </ul>
   </div>
-</nav>
-
-      
+</nav>   
   </body>
 </html>
 	
