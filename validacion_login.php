@@ -100,5 +100,5 @@ else
   <strong>Success!</strong> Indicates a successful or positive action.
 </div>
 */
-*/
+
 ?>
