@@ -15,7 +15,7 @@ while ($num_registros>0){
 	$usuario2=$dato["codigo_login"];
 	$pass2=$dato["pass_login"];
 	$id2=$dato["id_login"];
-
+echo "se conecta a base de datos";
 		if (($usuario==$usuario2)and($pass==$pass2)and($select==$id2))
 			{     
 				$_SESSION["user"]=$usuario2;
@@ -34,8 +34,10 @@ while ($num_registros>0){
 			}
 		if(($select==$id2)and($usuario==$usuario2)and($pass<>$pass2))
 			{
-				  	 header('Location: Alerta_Pass.html ');
-				     break;
+				//echo "<script>Alert('Contraseña Erronea')</script>"; 
+			//header('Location: Alerta_Pass.html ');
+			echo "contraseña erronea";
+				break;
 			}
 			
 			$num_registros--;
@@ -43,7 +45,8 @@ while ($num_registros>0){
 
 if ($num_registros==0)
 {
-	header('Location: Pag_Alerta.html ');
+	//header('Location: Pag_Alerta.html ');
+	echo "fuera de todo";
 					
 }
 mysqli_close()

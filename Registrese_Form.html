@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="/images/edit.png" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title></title>
+    <title>Registro - Appsistencia</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,7 +20,7 @@
   <div class="container-fluid">
   <div class="jumbotron boxlogin">
     
-<form method="post" name="form_register" action="validacion_registro.php" >
+  <form method="post" name="form_register" action="validacion_registro.php" >
 <label for="inputEmail" >Rol:</label>
               <select name="frol" class="form-control" title="Selecciona un rol" required > 
                             <option value="1" selected >Alumno </option> 
@@ -57,10 +58,11 @@
   <input type="password" name="fpass2" class="form-control" placeholder="********"required>
 </div>
 
-
-  <button type="submit" class="btn btn-info btn-lg" data-toggle="tooltip" title="Registrese!!">
-  <span class="glyphicon glyphicon-floppy-saved"> </span> Registrese
-  </button>
+    <a href="Index.html"/><img src="back.png" width="38" height="38" alt="Volver" /> <!-- Boton Volver -->
+  
+   <button type="submit" class="btn btn-info btn-lg" data-toggle="tooltip" title="Registrarse">
+  <span class="glyphicon glyphicon-floppy-saved"> </span> Registrese </button>
+  
 
 
 </form>
