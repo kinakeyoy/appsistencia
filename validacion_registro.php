@@ -17,7 +17,8 @@ include("datos.php");
 
 if ($pass1==$pass2)
 {
-	$consulta="INSERT INTO usuario (codigo	,nombre,apellido,email,telefono) VALUES ('$cod','$nombre' ,'$apellido' ,'$correo' ,'$ntelefono')";	
+	$consulta="INSERT INTO usuario (identificacion,nombre,apellido,email,telefono,rol,pass) 
+	                        VALUES ('$cod','$nombre' ,'$apellido' ,'$correo' ,'$ntelefono','$rol','$pass1')";	
 	if (mysqli_query($conexion, $consulta)) {
     	header('Location: Pag_Usuario_Guardado.html ');
 		} 
@@ -28,7 +29,8 @@ if ($pass1==$pass2)
 }
 else
 {
-header('Location: Pag_Usuario_No_Guardado.html ');
+//	header('Location: Pag_Usuario_No_Guardado.html ');
+alert("contraseña igual");
 }
 
 

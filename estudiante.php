@@ -1,20 +1,16 @@
-<?php 
-//Inicio la sesión 
-session_start(); 
+<?php
+  //Reanudamos la sesiÃ³n 
+  @session_start(); 
+  //Validamos si existe realmente una sesiÃ³n activa o no 
+ 
+?>
 
-
-if (isset($_SESSION['user'])) 
-{
-        echo "dentro del if"."  <br>";
-            echo $_SESSION['user'];
-/*
-<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title></title>
+    <title>Estudiante - Appsintencia</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,18 +19,13 @@ if (isset($_SESSION['user']))
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]--> 
-      
-  </head>
-  <body>
-   //<?php
-   //session_start();    
-   // ?>
-     
+    </head>
+  <body>   
       
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="">Appsintencia</a>
+      <a class="navbar-brand" href="/">Appsintencia</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Estudiante</a></li>
@@ -43,21 +34,16 @@ if (isset($_SESSION['user']))
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"> <?php echo "$_SESSION[user]"; ?> </span></a></li>
-      <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+      <li><a href="/logout.php"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
     </ul>
   </div>
-</nav>  */
+</nav>  
 
-
-        }
-    else
-        echo "fuera del if";
   
-
-?>
-
   </body>
 </html>
+
+
 	
 	
 
